@@ -1,5 +1,5 @@
 ## PlotRandom.R
-## Directory: ../STA 308/RandomFunc
+## Directory: /Users/cindy/Desktop/STA 308/RandomFunc
 ## Original: 06 Oct 2021 
 ## 
 ## Purpose:
@@ -21,7 +21,8 @@
 ##     Mean_x = the sample mean of Random_values
 ##     SD_x = the sample standard deviation of Random_values
 
-plotRandomNormals <- function(numpts=1000, numbins=15, mu=24, sigma=3, meanColor=”red”, seed=8675309) {
+plotRandomNormals <- function(numpts=1000, numbins=15, mu=24, sigma=3, 
+                              meanColor="red", seed=8675309) {
   set.seed(seed)
   rand_x <- rnorm(numpts, mean=mu, sd=sigma)
   mean_x <- mean(rand_x)
